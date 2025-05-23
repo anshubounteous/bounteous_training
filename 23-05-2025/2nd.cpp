@@ -7,19 +7,22 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int solutoin(vector<int>& v, int target){
-    unordered_set<int> uset;
-
+int solution(vector<int>& v, int target){
+    unordered_map<int, int> umap;
     int sum = 0, count = 0;
+    
+    umap[0] = 1;
+    
     for(int i = 0; i < v.size(); i++){
         sum += v[i];
-        uset.insert(sum);
-        int diff = sum - target;
-
-        if(uset.find(diff) != uset.end()){
-            count++;
+        
+        if(umap.find(sum - target) != umap.end()){
+            count += umap[sum - target];
         }
+        
+        umap[sum]++;
     }
+
     return count;
 }
 
@@ -27,12 +30,12 @@ int main(){
     int n;
     cin >> n;
     vector<int> v(n);
-    for(int i =0; i < n; i++){
+    for(int i = 0; i < n; i++){
         cin >> v[i];
     }
     int target;
     cin >> target;
 
-    cout << solutoin(v, target) << endl;
+    cout << solution(v, target) << endl;
     return 0;
 }

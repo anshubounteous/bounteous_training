@@ -16,7 +16,7 @@ vector<int> solution(vector<int>& v, int target){
             i++;
         }
         else if(sum > target){
-            j++;
+            j--;
         }
     }
     return {-1, -1};
