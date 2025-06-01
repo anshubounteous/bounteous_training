@@ -1,4 +1,4 @@
-📘 [Read Full Documentation on Notion](https://www.notion.so/Database-Assignment-2050747c01ec80a5955be63b2c90ab81?source=copy_link)
+📘 [View Full Documentation on Notion](https://wary-close-2bb.notion.site/Database-Assignment-2050747c01ec80a5955be63b2c90ab81?source=copy_link)
 
 ### Question 1: Create the tables below in the database
 
