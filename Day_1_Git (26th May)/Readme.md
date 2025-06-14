@@ -1,130 +1,108 @@
 
-````markdown
-# 🚀 Git Commands Guide using Git Bash & Rebase
-
-This guide covers essential Git commands using **Git Bash**, with detailed examples and instructions on how to use `git rebase` for a clean commit history.
-
----
-
-## 📁 1. Setting Up Git & Git Bash
-
-Git Bash is a command-line shell for using Git on Windows.  
-👉 Download it from: [git-scm.com](https://git-scm.com/)
+## 🛠️ Setup & Configuration
 
 ```bash
-git --version                            # Check Git installation
-git config --global user.name "Your Name"
-git config --global user.email "you@example.com"
+git config --global user.name "Your Name"       # Set your global Git username
+git config --global user.email "your.email@example.com"   # Set your global Git email
+git config --list                               # List all current Git configurations
 ````
 
 ---
 
-## 🔧 2. Initialize or Clone a Repository
+## 📁 Repository Initialization
 
 ```bash
-git init                       # Start a new local repository
-git clone <repository-url>    # Clone an existing remote repo
+git init                                         # Initialize a new Git repository
+git clone <repo-url>                             # Clone a remote Git repository
 ```
 
 ---
 
-## 📄 3. Staging, Committing & Tracking Changes
+## 🔍 Basic Workflow
 
 ```bash
-git status                     # Check current changes
-git add .                      # Stage all files
-git commit -m "commit message" # Commit with message
-git log                        # View commit history
+git status                                       # Show the working directory status
+git add <filename>                               # Stage a specific file for commit
+git add .                                        # Stage all changes in the current directory
+git commit -m "Your message"                     # Commit staged changes with a message
+git log                                          # View the commit history
 ```
 
 ---
 
-## 🌐 4. Remote Repositories
+## 🌐 Remote Repositories
 
 ```bash
-git remote -v                                # Show remote URLs
-git remote add origin <remote-url>           # Link to remote
-git push -u origin main                      # First-time push
-git pull origin main                         # Pull changes from remote
+git remote -v                                    # Show current remote repository URLs
+git remote add origin <repo-url>                 # Add a new remote repository
+git push -u origin main                          # Push commits to the remote 'main' branch and track it
+git pull                                         # Fetch and merge changes from the remote repo
 ```
 
 ---
 
-## 🌿 5. Branching & Merging
+## 🧭 Branching
 
 ```bash
-git branch                              # List branches
-git checkout -b feature-branch          # Create & switch to new branch
-git checkout main                       # Switch back to main
-git merge feature-branch                # Merge feature into main
+git branch                                       # List all local branches
+git branch <branch-name>                         # Create a new branch
+git checkout <branch-name>                       # Switch to the specified branch
+git checkout -b <branch-name>                    # Create and switch to a new branch
+git merge <branch-name>                          # Merge a branch into the current branch
 ```
 
 ---
 
-## ♻️ 6. Git Rebase – A Cleaner History
-
-Use `git rebase` to move your feature work on top of the latest main branch:
+## ♻️ Undoing Changes
 
 ```bash
-git checkout feature-branch
-git rebase main
-```
-
-### 🔁 Interactive Rebase
-
-```bash
-git rebase -i HEAD~3    # Rebase last 3 commits interactively
-```
-
-This allows you to:
-
-* `pick` a commit
-* `squash` commits
-* `reword` messages
-* `drop` unnecessary commits
-
----
-
-## 🧽 7. Undoing Changes
-
-```bash
-git reset --soft HEAD~1     # Undo last commit, keep changes
-git reset --hard HEAD~1     # Remove commit and changes
-git checkout -- <file>      # Discard file changes
-git stash                   # Temporarily save uncommitted work
-git stash pop               # Restore stashed work
+git reset <file>                                 # Unstage a file but keep the changes
+git reset --hard                                 # Remove all changes and reset to the last commit
+git revert <commit-hash>                         # Create a new commit that undoes the specified commit
 ```
 
 ---
 
-## 🧠 8. Git Tips and Power Moves
+## 🧰 Stashing
 
 ```bash
-git log --oneline --graph      # Neat commit history
-git branch -d feature-branch   # Delete branch locally
-git remote prune origin        # Clean up deleted remote branches
-git clean -fd                  # Remove untracked files/folders
+git stash                                        # Save uncommitted changes temporarily
+git stash pop                                    # Reapply the most recent stashed changes
 ```
 
 ---
 
-## 🧪 9. Common Git Workflow (Feature Branch Model)
+## 📚 Tagging
 
 ```bash
-git clone <repo-url>
-cd repo-folder
-git checkout -b feature-x
-# Make changes
-git add .
-git commit -m "added feature x"
-git pull origin main --rebase   # Rebase onto latest main
-git push origin feature-x
+git tag                                          # List all tags
+git tag v1.0                                     # Create a lightweight tag named 'v1.0'
+git tag -a v1.0 -m "version 1.0"                 # Create an annotated tag with a message
 ```
 
 ---
 
-## ✅ Conclusion
+## 🔄 Git Rebase (Advanced)
 
-This file covers **Git basics**, **Git Bash usage**, and **git rebase** to help maintain a clean, linear project history.
+```bash
+git rebase <branch>                              # Reapply commits on top of another base branch
+git rebase -i HEAD~3                             # Interactively rebase the last 3 commits
+git rebase --continue                            # Continue rebase after resolving conflicts
+```
 
 ---
+
+## 🧹 Cleaning
+
+```bash
+git clean -fd                                    # Remove untracked files and directories
+```
+
+---
+
+## 🔍 Helpful Logs
+
+```bash
+git diff                                         # Show changes in unstaged files
+git show <commit-hash>                           # Show details of a specific commit
+```
