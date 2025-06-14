@@ -4,6 +4,11 @@ A Spring Boot application that simulates an **Order State Machine** without usin
 
 ---
 
+## 📊 System Architecture Diagram
+
+![diagram-export-6-15-2025-2_32_42-AM](https://github.com/user-attachments/assets/80a40243-acf9-421f-9ccb-adef827b1d48)
+
+
 ## 🧠 Project Logic
 
 This application models an `Order` entity with the following properties:
@@ -109,6 +114,10 @@ cd order-processing-app
 }
 ```
 
+![Screenshot 2025-06-15 021535](https://github.com/user-attachments/assets/4f641513-1818-4a74-97a6-3b91d56a8700)
+
+
+
 ### ✅ 2. Get Order by ID
 
 **URL:** `GET /orders/{id}`
@@ -125,6 +134,9 @@ cd order-processing-app
   "history": ["NEW"]
 }
 ```
+
+![Screenshot 2025-06-15 021609](https://github.com/user-attachments/assets/5947b4c5-a2c0-4ddb-badd-3c3e8d7aceb5)
+
 
 ### ✅ 3. Get All Orders
 
@@ -149,6 +161,9 @@ cd order-processing-app
 ]
 ```
 
+![Screenshot 2025-06-15 021705](https://github.com/user-attachments/assets/2478a6b4-39fd-4740-b49f-7f3dbd55cd28)
+
+
 ### ✅ 4. Trigger Event (Change Order State)
 
 **URL:** `POST /orders/{id}/event/{event}`
@@ -165,6 +180,9 @@ cd order-processing-app
   "history": ["NEW", "PROCESSING"]
 }
 ```
+
+![Screenshot 2025-06-15 021809](https://github.com/user-attachments/assets/c67c2ef3-3f89-43ef-8547-7e3a53136bc8)
+
 
 **Invalid Transition Example:** `POST /orders/1/event/DELIVER`
 
@@ -192,6 +210,9 @@ cd order-processing-app
 "PROCESSING"
 ```
 
+![Screenshot 2025-06-15 021826](https://github.com/user-attachments/assets/f2efb3b7-6b37-4125-a457-e19a12ed29d3)
+
+
 ### ✅ 6. Get Allowed Events (From Current State)
 
 **URL:** `GET /orders/{id}/allowed-events`
@@ -203,6 +224,9 @@ cd order-processing-app
 ```json
 ["SHIP", "CANCEL"]
 ```
+
+![Screenshot 2025-06-15 021843](https://github.com/user-attachments/assets/69b71bbb-c4ed-449c-80f6-092addfd2ba3)
+
 
 ### ✅ 7. Get Transition History
 
@@ -216,32 +240,8 @@ cd order-processing-app
 ["NEW", "PROCESSING"]
 ```
 
----
+![Screenshot 2025-06-15 021857](https://github.com/user-attachments/assets/ff1f8f40-9807-4531-a859-d6b28e562351)
 
-## 📊 System Architecture Diagram
-
-```
-+-----------------------------+
-|     OrderController         |
-+-------------+---------------+
-              |
-              v
-+-----------------------------+
-|        OrderService         |
-+-------------+---------------+
-              |
-+-------------+---------------+
-| Manual State Transition Map |
-+-------------+---------------+
-              |
-              v
-+------------------------+
-|       Order Entity     |
-|------------------------|
-| id, description, state |
-| history (List<String>) |
-+------------------------+
-```
 
 ---
 
