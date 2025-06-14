@@ -1,10 +1,10 @@
-# 🚗 Car Customization Console App (Java)
+# Car Customization Console App (Java)
 
 A command-line Car Customization Application that simulates selecting and modifying car models using a modular design. It demonstrates strong Object-Oriented Programming (OOP) principles, interface-model-service architecture, Java Collections, and abstraction.
 
 ---
 
-## 📦 Overview
+## Overview
 
 This application allows users to:
 
@@ -14,7 +14,7 @@ This application allows users to:
 
 ---
 
-## 🧠 System Design & Architecture
+## System Design & Architecture
 
 The project uses **interface-driven development** with three main layers:
 
@@ -30,7 +30,7 @@ The project uses **interface-driven development** with three main layers:
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 src/
@@ -49,7 +49,7 @@ src/
 
 ---
 
-## 🧾 System Flow Diagram
+## System Flow Diagram
 
 ```text
 +-------------------+       +--------------------+       +------------------+
@@ -65,13 +65,13 @@ src/
 
 ---
 
-## 🔧 Car Types and Features
+## Car Types and Features
 
 ### Base Models:
 
-* 🚙 SUV
-* 🚗 Sedan
-* 🚕 Hatchback
+* SUV
+* Sedan
+* Hatchback
 
 ### Possible Customizations:
 
@@ -85,7 +85,7 @@ Each base model has a base price. Final price = base price + total cost of selec
 
 ---
 
-## 🧪 Example Output
+## Example Output
 
 ```
 Welcome to the Car Customization App!
@@ -106,14 +106,9 @@ Your customized SUV:
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
-### ✅ Prerequisites
-
-* Java JDK 8 or higher
-* Any IDE (e.g., IntelliJ, Eclipse) or Terminal
-
-### ▶️ Run the App
+### Run the App
 
 1. Download or clone the repository
 2. Import it into your IDE or compile via command line
@@ -126,7 +121,7 @@ $ java main.Main
 
 ---
 
-## 💡 Concepts Used
+## Concepts Used
 
 | Concept          | Description                                             |
 | ---------------- | ------------------------------------------------------- |
@@ -137,25 +132,16 @@ $ java main.Main
 
 ---
 
-## 🔮 Future Enhancements
-
-* GUI using JavaFX or Swing
-* Persist configurations using JSON or DB
-* Add login/user profile to save builds
-
 ---
-
-
-
-# 💰 Java Tax Calculator CLI App
+# Java Tax Calculator CLI App
 
 This is a **modular, interface-driven Java console application** that calculates income tax based on user's age and declared deductions. The app handles various tax slabs and deduction categories as per Indian tax rules and demonstrates key object-oriented and enterprise-grade Java concepts.
 
 ---
 
-## 📦 Overview
+## Overview
 
-### 🔧 Features
+### Features
 
 * Calculates income tax based on age group (General, Senior, Super Senior)
 * Supports deductions under sections:
@@ -168,7 +154,7 @@ This is a **modular, interface-driven Java console application** that calculates
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 src/
@@ -189,9 +175,9 @@ src/
 
 ---
 
-## 🧠 System Design & Logic
+## System Design & Logic
 
-### 📌 `TaxPayer`
+### `TaxPayer`
 
 * Fields: name, age, annualIncome, deductions
 * Age category logic:
@@ -200,12 +186,12 @@ src/
   * 60–79: Senior Citizen
   * 80+: Super Senior Citizen
 
-### 📌 `Deduction`
+### `Deduction`
 
 * Holds deduction values for 80C, 80D, and Section 24
 * Uses validation against maximum deduction limits from `TaxConstants`
 
-### 📌 `TaxCalculatorService`
+### `TaxCalculatorService`
 
 * Interface with methods to:
 
@@ -213,7 +199,7 @@ src/
   * Apply deductions
   * Return summary details
 
-### 📌 `TaxCalculatorServiceImpl`
+### `TaxCalculatorServiceImpl`
 
 * Implements logic for tax slab calculations
 * Uses conditions for slab thresholds and progressive tax logic
@@ -221,7 +207,7 @@ src/
 
 ---
 
-## 📊 System Flow Diagram
+## System Flow Diagram
 
 ```text
 +--------------------+
@@ -246,7 +232,7 @@ src/
 
 ---
 
-## 🔢 Sample Use Case
+## Sample Use Case
 
 ```
 Enter name: Rahul
@@ -267,14 +253,9 @@ Tax Payable: ₹82,500
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
-### ✅ Prerequisites
-
-* Java 8+
-* Any Java IDE (e.g., IntelliJ IDEA, Eclipse) or terminal with `javac`
-
-### ▶️ Run the App
+### Run the App
 
 1. Clone the repository or extract files from the provided ZIP
 2. Navigate to `src/` directory
@@ -287,7 +268,7 @@ java main.Main
 
 ---
 
-## 💡 Key Concepts Used
+## Key Concepts Used
 
 | Concept              | Usage                                             |
 | -------------------- | ------------------------------------------------- |
@@ -298,15 +279,3 @@ java main.Main
 | User Interaction     | Console-based input/output                        |
 
 ---
-
-## 🔮 Future Enhancements
-
-* Add JSON file input/output for storing taxpayer records
-* Export tax summaries to PDF
-* RESTful API version using Spring Boot
-
----
-
-## 👨‍💻 Author
-
-**Anshu**

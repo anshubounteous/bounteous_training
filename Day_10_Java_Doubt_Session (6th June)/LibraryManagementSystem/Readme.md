@@ -130,12 +130,8 @@ new OverdueMonitor(library.getLendingRecords()).start();
 
 ## Getting Started
 
-### Prerequisites
 
-* Java JDK 8+
-* Any IDE (e.g., IntelliJ IDEA, Eclipse)
-
-### ▶ Run the Project
+### Run the Project
 
 1. Clone the repository or unzip the provided source files
 2. Open the project in your IDE
@@ -157,8 +153,3 @@ new OverdueMonitor(library.getLendingRecords()).start();
 | Extensible Codebase           | Modular, reusable components     |
 
 ---
-
-
-## Author
-
-**Anshu**

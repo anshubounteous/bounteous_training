@@ -1,12 +1,12 @@
-# 🛒 Java Product Catalog Console App
+# Java Product Catalog Console App
 
 This project is a **Java-based console application** for managing a product catalog. It allows users to add, retrieve, update, delete, sort, and filter products. Built using an interface-model-service architecture, it showcases the use of Java Collections, Object-Oriented Programming (OOP), and Stream API.
 
 ---
 
-## 📦 Overview
+## Overview
 
-### ✨ Features
+### Features
 
 * Add new products with unique IDs
 * Retrieve all or specific products by ID or name
@@ -18,9 +18,7 @@ This project is a **Java-based console application** for managing a product cata
 
 ---
 
-## 🧠 System Design & Logic
-
-### 🔌 Architecture Layers
+### Architecture Layers
 
 ```
 +------------------+
@@ -40,7 +38,7 @@ This project is a **Java-based console application** for managing a product cata
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 src/
@@ -53,7 +51,7 @@ src/
     └── Main.java
 ```
 
-### 🔹 Product.java
+### Product.java
 
 Represents a product with:
 
@@ -82,7 +80,7 @@ Interface that defines:
 
 ---
 
-## 🔢 Sample Use Case
+## Sample Use Case
 
 ```
 Welcome to Product Catalog System!
@@ -106,7 +104,7 @@ Product added successfully!
 
 ---
 
-## 📊 System Flow Diagram
+## System Flow Diagram
 
 ```text
 +------------+
@@ -126,14 +124,9 @@ Product added successfully!
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
-### ✅ Prerequisites
-
-* Java 8+
-* IDE (IntelliJ, Eclipse) or terminal with `javac`
-
-### ▶️ Run Instructions
+### Run Instructions
 
 1. Download or clone this project
 2. Navigate to `src/` folder
@@ -146,7 +139,7 @@ java main.Main
 
 ---
 
-## 💡 Key Concepts Used
+## Key Concepts Used
 
 | Concept            | Usage                               |
 | ------------------ | ----------------------------------- |
@@ -158,26 +151,18 @@ java main.Main
 
 ---
 
-## 🔮 Future Enhancements
-
-* Store products in a file or database
-* Add discount logic and stock management
-* Export product list as CSV/JSON
-* Add GUI using JavaFX or Swing
 
 ---
----
----
 
-# 📦 Java Product Management Console App
+# Java Product Management Console App
 
 This **Java-based product management system** is a console application built using object-oriented principles, interfaces, and the Java Collections framework. It enables the management of products with full CRUD operations, filtering, sorting, and duplicate prevention.
 
 ---
 
-## 🔍 Project Summary
+## Project Summary
 
-### ✨ Key Features
+### Key Features
 
 * Add new products with unique names
 * Update or delete existing products
@@ -188,7 +173,7 @@ This **Java-based product management system** is a console application built usi
 
 ---
 
-## 🧠 System Design & Architecture
+## System Design & Architecture
 
 This application uses the following architecture layers:
 
@@ -209,7 +194,7 @@ This application uses the following architecture layers:
 +------------------+
 ```
 
-### 📁 Folder Structure
+### Folder Structure
 
 ```
 src/
@@ -224,9 +209,9 @@ src/
 
 ---
 
-## 🔩 Class Responsibilities
+## Class Responsibilities
 
-### ✅ `Product.java`
+### `Product.java`
 
 Represents a single product with:
 
@@ -234,7 +219,7 @@ Represents a single product with:
 * `double price`
 * `String category`
 
-### ✅ `ProductService`
+### `ProductService`
 
 Defines the operations allowed:
 
@@ -247,7 +232,7 @@ Defines the operations allowed:
 * `filterByCategory(String)`
 * `filterByPriceRange(double min, double max)`
 
-### ✅ `ProductServiceImpl`
+### `ProductServiceImpl`
 
 Implements logic and stores products using `HashMap<String, Product>`.
 Uses Stream API for sorting and filtering operations.
@@ -255,7 +240,7 @@ Prevents addition of duplicate product names.
 
 ---
 
-## 🔢 Example Flow
+## Example Flow
 
 ```bash
 Welcome to Product Manager
@@ -276,7 +261,7 @@ Product added successfully.
 
 ---
 
-## 📊 System Flow Diagram
+## System Flow Diagram
 
 ```text
 +-------------+
@@ -296,14 +281,10 @@ Product added successfully.
 
 ---
 
-## 🚀 How to Run This App
+## How to Run This App
 
-### ✅ Requirements
 
-* Java 8 or higher
-* Any IDE (IntelliJ, Eclipse) or terminal
-
-### ▶️ Steps
+### Steps
 
 1. Extract project ZIP
 2. Navigate to `src/`
@@ -316,7 +297,7 @@ java main.Main
 
 ---
 
-## 📚 Concepts Demonstrated
+## Concepts Demonstrated
 
 | Concept                | Applied In                           |
 | ---------------------- | ------------------------------------ |
@@ -326,17 +307,5 @@ java main.Main
 | Java Streams           | Sorting and filtering logic          |
 | Exception Handling     | Prevent duplicate product names      |
 
----
-
-## 🔮 Future Enhancements
-
-* Add persistent file or database storage
-* JSON/CSV product export
-* Web version using Spring Boot
-* REST API integration
 
 ---
-
-## 👨‍💻 Author
-
-**Anshu**

@@ -1,10 +1,10 @@
-# 🚗 Car Customization Console App (Java)
+# Car Customization Console App (Java)
 
 A command-line Car Customization Application that simulates selecting and modifying car models using a modular design. It demonstrates strong Object-Oriented Programming (OOP) principles, interface-model-service architecture, Java Collections, and abstraction.
 
 ---
 
-## 📦 Overview
+## Overview
 
 This application allows users to:
 
@@ -14,7 +14,7 @@ This application allows users to:
 
 ---
 
-## 🧠 System Design & Architecture
+## System Design & Architecture
 
 The project uses **interface-driven development** with three main layers:
 
@@ -30,7 +30,7 @@ The project uses **interface-driven development** with three main layers:
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 src/
@@ -49,7 +49,7 @@ src/
 
 ---
 
-## 🧾 System Flow Diagram
+## System Flow Diagram
 
 ```text
 +-------------------+       +--------------------+       +------------------+
@@ -65,13 +65,13 @@ src/
 
 ---
 
-## 🔧 Car Types and Features
+## Car Types and Features
 
 ### Base Models:
 
-* 🚙 SUV
-* 🚗 Sedan
-* 🚕 Hatchback
+* SUV
+* Sedan
+* Hatchback
 
 ### Possible Customizations:
 
@@ -85,7 +85,7 @@ Each base model has a base price. Final price = base price + total cost of selec
 
 ---
 
-## 🧪 Example Output
+## Example Output
 
 ```
 Welcome to the Car Customization App!
@@ -106,14 +106,9 @@ Your customized SUV:
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
-### ✅ Prerequisites
-
-* Java JDK 8 or higher
-* Any IDE (e.g., IntelliJ, Eclipse) or Terminal
-
-### ▶️ Run the App
+### Run the App
 
 1. Download or clone the repository
 2. Import it into your IDE or compile via command line
@@ -126,7 +121,7 @@ $ java main.Main
 
 ---
 
-## 💡 Concepts Used
+## Concepts Used
 
 | Concept          | Description                                             |
 | ---------------- | ------------------------------------------------------- |
@@ -136,15 +131,3 @@ $ java main.Main
 | Modularity       | Easy to extend with new car types or features           |
 
 ---
-
-## 🔮 Future Enhancements
-
-* GUI using JavaFX or Swing
-* Persist configurations using JSON or DB
-* Add login/user profile to save builds
-
----
-
-## 👨‍💻 Author
-
-**Anshu**

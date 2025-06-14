@@ -1,12 +1,12 @@
-# 🛒 Java Product Catalog Console App
+# Java Product Catalog Console App
 
 This project is a **Java-based console application** for managing a product catalog. It allows users to add, retrieve, update, delete, sort, and filter products. Built using an interface-model-service architecture, it showcases the use of Java Collections, Object-Oriented Programming (OOP), and Stream API.
 
 ---
 
-## 📦 Overview
+## Overview
 
-### ✨ Features
+### Features
 
 * Add new products with unique IDs
 * Retrieve all or specific products by ID or name
@@ -18,9 +18,7 @@ This project is a **Java-based console application** for managing a product cata
 
 ---
 
-## 🧠 System Design & Logic
-
-### 🔌 Architecture Layers
+### Architecture Layers
 
 ```
 +------------------+
@@ -40,7 +38,7 @@ This project is a **Java-based console application** for managing a product cata
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 src/
@@ -53,7 +51,7 @@ src/
     └── Main.java
 ```
 
-### 🔹 Product.java
+### Product.java
 
 Represents a product with:
 
@@ -82,7 +80,7 @@ Interface that defines:
 
 ---
 
-## 🔢 Sample Use Case
+## Sample Use Case
 
 ```
 Welcome to Product Catalog System!
@@ -106,7 +104,7 @@ Product added successfully!
 
 ---
 
-## 📊 System Flow Diagram
+## System Flow Diagram
 
 ```text
 +------------+
@@ -126,14 +124,9 @@ Product added successfully!
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
-### ✅ Prerequisites
-
-* Java 8+
-* IDE (IntelliJ, Eclipse) or terminal with `javac`
-
-### ▶️ Run Instructions
+### Run Instructions
 
 1. Download or clone this project
 2. Navigate to `src/` folder
@@ -146,7 +139,7 @@ java main.Main
 
 ---
 
-## 💡 Key Concepts Used
+## Key Concepts Used
 
 | Concept            | Usage                               |
 | ------------------ | ----------------------------------- |
@@ -157,16 +150,3 @@ java main.Main
 | Exception Handling | Preventing duplicate IDs            |
 
 ---
-
-## 🔮 Future Enhancements
-
-* Store products in a file or database
-* Add discount logic and stock management
-* Export product list as CSV/JSON
-* Add GUI using JavaFX or Swing
-
----
-
-## 👨‍💻 Author
-
-**Anshu**

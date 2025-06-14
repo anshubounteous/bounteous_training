@@ -1,5 +1,5 @@
 
-## 🛠️ Setup & Configuration
+## Setup & Configuration
 
 ```bash
 git config --global user.name "Your Name"       # Set your global Git username
@@ -9,7 +9,7 @@ git config --list                               # List all current Git configura
 
 ---
 
-## 📁 Repository Initialization
+## Repository Initialization
 
 ```bash
 git init                                         # Initialize a new Git repository
@@ -18,7 +18,7 @@ git clone <repo-url>                             # Clone a remote Git repository
 
 ---
 
-## 🔍 Basic Workflow
+## Basic Workflow
 
 ```bash
 git status                                       # Show the working directory status
@@ -30,7 +30,7 @@ git log                                          # View the commit history
 
 ---
 
-## 🌐 Remote Repositories
+## Remote Repositories
 
 ```bash
 git remote -v                                    # Show current remote repository URLs
@@ -41,7 +41,7 @@ git pull                                         # Fetch and merge changes from 
 
 ---
 
-## 🧭 Branching
+## Branching
 
 ```bash
 git branch                                       # List all local branches
@@ -53,7 +53,7 @@ git merge <branch-name>                          # Merge a branch into the curre
 
 ---
 
-## ♻️ Undoing Changes
+## Undoing Changes
 
 ```bash
 git reset <file>                                 # Unstage a file but keep the changes
@@ -63,7 +63,7 @@ git revert <commit-hash>                         # Create a new commit that undo
 
 ---
 
-## 🧰 Stashing
+## Stashing
 
 ```bash
 git stash                                        # Save uncommitted changes temporarily
@@ -72,7 +72,7 @@ git stash pop                                    # Reapply the most recent stash
 
 ---
 
-## 📚 Tagging
+## Tagging
 
 ```bash
 git tag                                          # List all tags
@@ -82,7 +82,7 @@ git tag -a v1.0 -m "version 1.0"                 # Create an annotated tag with 
 
 ---
 
-## 🔄 Git Rebase (Advanced)
+## Git Rebase (Advanced)
 
 ```bash
 git rebase <branch>                              # Reapply commits on top of another base branch
@@ -92,7 +92,7 @@ git rebase --continue                            # Continue rebase after resolvi
 
 ---
 
-## 🧹 Cleaning
+## Cleaning
 
 ```bash
 git clean -fd                                    # Remove untracked files and directories
@@ -100,7 +100,7 @@ git clean -fd                                    # Remove untracked files and di
 
 ---
 
-## 🔍 Helpful Logs
+## Helpful Logs
 
 ```bash
 git diff                                         # Show changes in unstaged files
