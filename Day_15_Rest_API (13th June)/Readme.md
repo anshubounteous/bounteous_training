@@ -11,11 +11,6 @@ full architecture diagram:
 ![diagram-export-6-22-2025-10_55_41-PM](https://github.com/user-attachments/assets/b69a0191-491e-46c2-bf16-89b1dbc061ee)
 
 ---
----
-high level diagram:
-![ChatGPT Image Jun 22, 2025, 11_50_07 PM](https://github.com/user-attachments/assets/fa4e2847-9cba-4a82-ba9f-b48b129c3b1a)
-
-
 
 ## Application Flow
 
